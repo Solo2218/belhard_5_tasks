@@ -60,7 +60,7 @@ if __name__ == '__main__':
         print(f"Оценка: {score}")
         if score < 7:
             raise ValueError(score)
-    except ValueError as  exc:
+    except ValueError as exc:
         punish_child(exc)
     except RuntimeError as exc:
         print(exc)

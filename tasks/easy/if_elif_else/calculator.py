@@ -41,4 +41,3 @@ if __name__ == '__main__':
     num2_val = int(input('Введите второе число: '))
     operation_val = input('Введите операцию: ')
     print(f'Результат: {calculator(num1_val, num2_val, operation_val)}')
-
