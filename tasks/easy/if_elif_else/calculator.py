@@ -23,6 +23,16 @@ from typing import Union
 
 def calculator(num1: int, num2: int, operation: str) -> Union[int, float, str]:
     result = None
+    if operation == '+':
+        result = num1 + num2
+    elif operation == '-':
+        result = num1 - num2
+    elif operation == '*':
+        result = num1 * num2
+    elif operation == '/':
+        result = num1 / num2
+    else:
+        result = "Неизвестная операция"
     return result
 
 
@@ -31,3 +41,4 @@ if __name__ == '__main__':
     num2_val = int(input('Введите второе число: '))
     operation_val = input('Введите операцию: ')
     print(f'Результат: {calculator(num1_val, num2_val, operation_val)}')
+
