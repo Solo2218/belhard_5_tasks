@@ -37,7 +37,12 @@ def is_divide_by(to_divide: int, divider_1: int, divider_2: int) -> bool:
     :rtype: bool
     """
     result = None
-    # TODO написать свой код здесь
+    res_divider_1 = to_divide % divider_1
+    res_divider_2 = to_divide % divider_2
+    if res_divider_1 == 0 and res_divider_2 == 0:
+        result = True
+    else:
+        result = False
     return result
 
 
