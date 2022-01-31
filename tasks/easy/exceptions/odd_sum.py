@@ -14,7 +14,10 @@ TypeError с сообщением "Все элементы списка долж
 
 def odd_sum(int_list: list) -> int:
     summa = 0
-    # TODO написать свой код здесь
+    index = 0
+    for index in range(len(int_list)):
+        if int_list[index] % 2 == 1:
+            summa += int_list[index]
     return summa
 
 

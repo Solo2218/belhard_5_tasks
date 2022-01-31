@@ -12,7 +12,10 @@ num_sum(321) -> 6
 
 
 def num_sum(numb: int) -> int:
-    result = None
+    result = 0
+    numb_str = str(numb)
+    for index in range(len(numb_str)):
+        result += int(numb_str[index])
     return result
 
 

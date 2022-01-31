@@ -7,6 +7,13 @@
 
 
 def not_3(array: list) -> list:
+    index = 0
+    while index < len(array):
+        match array[index] % 3:
+            case 0:
+                del array[index]
+            case _:
+                index += 1
     return array
 
 
